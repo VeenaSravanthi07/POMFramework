@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [crossBrowser]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Firefox_Test(failed)">
+    <parameter name="browser" value="FireFox"/>
+    <classes>
+      <class name="com.myStore.TestCases.IndexTestPage">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="verifyTitle"/>
+          <include name="afterSuite"/>
+          <include name="verifyLogo"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.myStore.TestCases.IndexTestPage -->
+    </classes>
+  </test> <!-- Firefox_Test(failed) -->
+  <test thread-count="5" parallel="tests" name="IE_Test(failed)">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="com.myStore.TestCases.IndexTestPage">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="verifyTitle"/>
+          <include name="afterSuite"/>
+          <include name="verifyLogo"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.myStore.TestCases.IndexTestPage -->
+    </classes>
+  </test> <!-- IE_Test(failed) -->
+</suite> <!-- Failed suite [crossBrowser] -->

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test_MyStore(failed)">
+    <classes>
+      <class name="com.myStore.TestCases.LoginPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setup"/>
+          <include name="loadConfig"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.myStore.TestCases.LoginPageTest -->
+      <class name="com.myStore.TestCases.EndtoEnd">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="loadConfig"/>
+          <include name="endToendTest"/>
+        </methods>
+      </class> <!-- com.myStore.TestCases.EndtoEnd -->
+      <class name="com.myStore.TestCases.OrderPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+          <include name="VerifyTotalPrice"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.myStore.TestCases.OrderPageTest -->
+      <class name="com.myStore.TestCases.AddToCartPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="AddToCartTest"/>
+          <include name="loadConfig"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.myStore.TestCases.AddToCartPageTest -->
+    </classes>
+  </test> <!-- Test_MyStore(failed) -->
+</suite> <!-- Failed suite [Suite] -->
